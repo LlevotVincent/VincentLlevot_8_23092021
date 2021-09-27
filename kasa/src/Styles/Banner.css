@@ -1,0 +1,29 @@
+.body{
+    margin: 0;
+    max-width: 1240px;
+    background-color: red;
+}
+.Banner{
+    position: relative;
+    max-width: 100%;
+    width: 1240px;
+    height: 223px;
+    padding-left: 100px;
+    background: #F7F7F7;
+}
+.Banner-background{
+    object-fit: cover;
+    width: auto;
+    height: 223px;
+    border-radius: 25px;
+}
+.Banner>p{
+    position: absolute;
+    left: 25.9%;
+    top: 20%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    color: white;
+}

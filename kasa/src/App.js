@@ -1,5 +1,6 @@
 import Header from '../src/Components/Header'
-import Home from './Components/Home'
+import Banner from './Components/Banner'
+import Cardgrid from './Components/Cardgrid';
 
 import './App.css';
 
@@ -8,7 +9,8 @@ function App() {
 
       <div className="App">
         <Header />
-        <Home />
+        <Banner />
+        <Cardgrid />
       </div>
 
   );
