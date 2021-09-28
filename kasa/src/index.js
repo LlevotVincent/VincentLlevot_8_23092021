@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './Pages/Home';
+import Logement from './Pages/Logement';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom'
+import Header from '../src/Components/Header'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Router>
+          <Header />
+        <Route path="./pages/Home">
+          <Home />
+        </Route>
+        <Route path="./Pages/Logement">
+          <Logement />
+        </Route>
+      </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
