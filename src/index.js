@@ -1,22 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from '../src/Components/Header'
 import Home from './Pages/Home';
 import Logement from './Pages/Logement';
+import Banner_Apropos from './Pages/Apropos';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Header from '../src/Components/Header'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
       <Router>
-          {/* <Header /> */}
-        <Route path="./Pages/Home">
+          <Header />
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="./Pages/Logement">
+        <Route path="/Logement">
           <Logement />
+        </Route>
+        <Route path="/Apropos">
+          <Banner_Apropos />
         </Route>
       </Router>
 

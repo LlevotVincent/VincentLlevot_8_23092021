@@ -1,5 +1,5 @@
 
-import Banner_logement from '../Components/Banner_logement'
+import Image_logement from '../Components/Image_logement'
 
 
 
@@ -7,9 +7,7 @@ import Banner_logement from '../Components/Banner_logement'
 function Logement() {
   return (
       <div className="Location">
-
-        <Banner_logement />
-
+        <Image_logement />
       </div>
 
   );

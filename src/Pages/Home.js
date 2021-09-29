@@ -1,4 +1,4 @@
-import Header from '../Components/Header'
+// import Header from '../Components/Header'
 import Banner from '../Components/Banner'
 import Cardgrid from '../Components/Cardgrid';
 import '../Styles/Home.css';
@@ -10,7 +10,6 @@ function Home() {
         <Banner />
         <Cardgrid />
       </div>
-
   );
 }
 

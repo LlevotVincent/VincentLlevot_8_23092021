@@ -1,0 +1,25 @@
+.Dropdown {
+    position: relative;
+    height: 47px;
+    width: 1023px;
+    margin : 33px 209px 0 208px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Drpdown_Text {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    width: 1023px;
+    height: 150px;
+    color: #FF6060;
+    background: #F7F7F7;
+    border-radius: 5px;
+    top: 47px;
+
+}

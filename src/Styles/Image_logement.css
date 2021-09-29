@@ -1,0 +1,11 @@
+.Banner_logement{
+    position: relative;
+    max-width: 100%;
+    width: 1240px;
+    height: 415px;
+    padding-left: 100px;
+    background: #F7F7F7;
+}
+.Img_Logement{
+    object-fit: cover;
+}
