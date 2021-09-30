@@ -2,34 +2,36 @@ import React from 'react';
 
 import '../Styles/Cardgrid.css';
 
-function Cardgrid () {
-    return (
-        <div className='Cardgrid'>
-            <div className='Card'>
-                <img className='card-background' alt='image d appartement'/>
-                <h2>Titre de la location</h2>
+class Cardgrid extends React.Component {
+    render() {
+        return (
+            <div className='Cardgrid'>
+                <div className='Card'>
+                    <img className='card-background' alt='image d appartement' />
+                    <h2>Titre de la location</h2>
+                </div>
+                <div className='Card'>
+                    <img className='card-background' alt='image d appartement' />
+                    <h2>Titre de la location</h2>
+                </div>
+                <div className='Card'>
+                    <img className='card-background' alt='image d appartement' />
+                    <h2>Titre de la location</h2>
+                </div>
+                <div className='Card'>
+                    <img className='card-background' alt='image d appartement' />
+                    <h2>Titre de la location</h2>
+                </div>
+                <div className='Card'>
+                    <img className='card-background' alt='image d appartement' />
+                    <h2>Titre de la location</h2>
+                </div>
+                <div className='Card'>
+                    <img className='card-background' alt='image d appartement' />
+                    <h2>Titre de la location</h2>
+                </div>
             </div>
-            <div className='Card'>
-                <img className='card-background' alt='image d appartement'/>
-                <h2>Titre de la location</h2>
-            </div>
-            <div className='Card'>
-                <img className='card-background' alt='image d appartement'/>
-                <h2>Titre de la location</h2>
-            </div>
-            <div className='Card'>
-                <img className='card-background' alt='image d appartement'/>
-                <h2>Titre de la location</h2>
-            </div>
-            <div className='Card'>
-                <img className='card-background' alt='image d appartement'/>
-                <h2>Titre de la location</h2>
-            </div>
-            <div className='Card'>
-                <img className='card-background' alt='image d appartement'/>
-                <h2>Titre de la location</h2>
-            </div>
-        </div>
-    )
+        )
+    }
 }
-export default Cardgrid 
+export default Cardgrid

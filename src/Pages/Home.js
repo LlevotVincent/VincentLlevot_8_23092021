@@ -4,13 +4,14 @@ import Cardgrid from '../Components/Cardgrid';
 import '../Styles/Home.css';
 
 
-function Home() {
-  return (
+class Home extends React.Component {
+  render() {
+    return (
       <div className="Home">
         <Banner />
         <Cardgrid />
       </div>
-  );
+    );
+  }
 }
-
 export default Home;

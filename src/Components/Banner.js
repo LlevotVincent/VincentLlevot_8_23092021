@@ -2,12 +2,14 @@ import React from 'react';
 import Background from '../Assets/Banner_background.png'
 import '../Styles/Banner.css'
 
-function Banner () {
-    return (
-        <div className='Banner'>
-                <img src= {Background} className='Banner-img' alt='image de nature'/>
+class Banner extends React.Component {
+    render() {
+        return (
+            <div className='Banner'>
+                <img src={Background} className='Banner-img' alt='image de nature' />
                 <p>Chez vous, partout et ailleurs</p>
-        </div>
-    )
+            </div>
+        )
+    }
 }
-export default Banner 
+export default Banner
