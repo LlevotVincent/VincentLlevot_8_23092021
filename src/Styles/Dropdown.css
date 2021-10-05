@@ -1,25 +1,48 @@
 .Dropdown {
+
+    height: 200px;
+    width: 1023px;
+    display: flex;
+    flex-direction: column;
+margin-top: 33px;
+}
+.Dropdown_title {
     position: relative;
     height: 47px;
-    width: 1023px;
-    margin : 33px 209px 0 208px;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px; 
     background-color: #FF6060;
+    color: white;
     border-radius: 5px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
-.Drpdown_Text {
-    position: absolute;
+.Dropdown_title>h2 {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 24px;
+}
+.dropdown>i {
+    font-size: 24px;
+}
+
+.Dropdown_Text {
+    position: relative;
     width: 1023px;
     height: 150px;
     color: #FF6060;
     background: #F7F7F7;
     border-radius: 5px;
-    top: 47px;
 
+}
+.Dropdown_Text>p {
+    padding: 29px;
+    margin: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
 }

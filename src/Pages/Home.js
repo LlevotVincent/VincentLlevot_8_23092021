@@ -1,4 +1,4 @@
-// import Header from '../Components/Header'
+import React from 'react';
 import Banner from '../Components/Banner'
 import Cardgrid from '../Components/Cardgrid';
 import '../Styles/Home.css';
