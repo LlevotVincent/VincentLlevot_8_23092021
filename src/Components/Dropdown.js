@@ -1,33 +1,43 @@
 import React from 'react';
 import '../Styles/Dropdown.css'
-import Chevron from '../Assets/Chevron.png'
+import { useState } from 'react'
+import reactDom from 'react-dom';
 
 
-// const Apropos =
-//     [
-//        { "Fiabilités": "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.",
-//         "Respect": "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
-//         "Service": "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
-//         "Sécurité": "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
-//     }
-//     ]
 
-// const Drop = Apropos.map(item => <ul className='Dropdown'>{item}</ul>)
 
 class Dropdown extends React.Component {
     constructor(props) {
         super(props);
-        };
+        this.state = {isShow: false};
+    }
+    showBox (){
+        this.setState({isShow: true});
+    }
 
+    hideBox (){
+        this.setState({isShow: false});
+    }
+    
     render() {
-
+        const isShow = this.state.isShow;
+        if (isShow === true) {
+            return(
+                <div className='Dropdown'>
+                    <div className='Dropdown_title'>
+                        <h2>{this.props.title}</h2>
+                        <i class="fas fa-chevron-up" style={{transform: [{ rotate: '90deg' }]}} onClick={this.hideBox.bind(this)}></i>
+                    </div>
+                    <div className='Dropdown_Text'><p>{this.props.text}</p></div>
+                </div>
+            ) 
+        }
         return (
             <div className='Dropdown'>
                 <div className='Dropdown_title'>
                     <h2>{this.props.title}</h2>
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-down" onClick={this.showBox.bind(this)} ></i>
                 </div>
-                <div className='Dropdown_Text'><p>{this.props.text}</p></div>
             </div>
         )
     }

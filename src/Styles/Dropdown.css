@@ -1,6 +1,6 @@
 .Dropdown {
 
-    height: 200px;
+    height: auto;
     width: 1023px;
     display: flex;
     flex-direction: column;
