@@ -26,7 +26,7 @@ class Dropdown extends React.Component {
                 <div className='Dropdown'>
                     <div className='Dropdown_title'>
                         <h2>{this.props.title}</h2>
-                        <i class="fas fa-chevron-up" style={{transform: [{ rotate: '90deg' }]}} onClick={this.hideBox.bind(this)}></i>
+                        <i class="fas fa-chevron-up" onClick={this.hideBox.bind(this)}></i>
                     </div>
                     <div className='Dropdown_Text'><p>{this.props.text}</p></div>
                 </div>
