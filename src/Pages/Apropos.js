@@ -3,6 +3,7 @@ import Banner_mountain from '../Assets/Banner_mountain.png'
 import '../Styles/Banner.css'
 import '../Styles/Apropos.css'
 import Dropdown from '../Components/Dropdown'
+import Footer from '../Components/Footer';
 
 const aProposText = require('../Datas/AproposText.json')
 
