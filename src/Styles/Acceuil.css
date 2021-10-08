@@ -1,0 +1,16 @@
+
+
+.Acceuil {
+  max-width: 1440px;
+}
+
+.cardgrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: #F7F7F7;
+  border-radius: 25px;
+  padding: 50px;
+  margin-top: 43px;
+}

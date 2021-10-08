@@ -12,32 +12,28 @@ class Dropdown extends React.Component {
         this.state = {isShow: false};
     }
     showBox (){
-        this.setState({isShow: true});
-    }
-
-    hideBox (){
-        this.setState({isShow: false});
+        this.setState({isShow: !this.state.isShow});
     }
     
     render() {
         const isShow = this.state.isShow;
+        let dropdownText;
+        let chevron;
         if (isShow === true) {
-            return(
-                <div className='Dropdown'>
-                    <div className='Dropdown_title'>
-                        <h2>{this.props.title}</h2>
-                        <i class="fas fa-chevron-up" onClick={this.hideBox.bind(this)}></i>
-                    </div>
-                    <div className='Dropdown_Text'><p>{this.props.text}</p></div>
-                </div>
-            ) 
+            dropdownText = <div className='Dropdown_Text'><p>{this.props.text}</p></div>
+            chevron = 'fas fa-chevron-up'
+        } else {
+            dropdownText = ''
+            chevron = 'fas fa-chevron-down'
         }
+
         return (
             <div className='Dropdown'>
                 <div className='Dropdown_title'>
                     <h2>{this.props.title}</h2>
-                    <i class="fas fa-chevron-down" onClick={this.showBox.bind(this)} ></i>
+                    <i className={chevron} onClick={this.showBox.bind(this)} ></i>
                 </div>
+                {dropdownText}
             </div>
         )
     }

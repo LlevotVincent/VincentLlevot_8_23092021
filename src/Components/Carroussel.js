@@ -1,8 +1,8 @@
 import React from 'react';
 import Img_Logement from '../Assets/Img_Logement.png'
-import '../Styles/Image_logement.css'
+import '../Styles/Carroussel.css'
 
-class Image_logement extends React.Component {
+class Carroussel extends React.Component {
     render() {
         return (
             <div>
@@ -13,4 +13,4 @@ class Image_logement extends React.Component {
         )
     }
 }
-export default Image_logement
+export default Carroussel

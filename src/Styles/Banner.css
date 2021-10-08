@@ -1,15 +1,8 @@
-.body{
-    margin: 0;
-    max-width: 1240px;
-    background-color: red;
-}
+
 .Banner{
+    max-width: 1240px;
     position: relative;
-    max-width: 100%;
-    width: 1240px;
     height: 223px;
-    padding-left: 100px;
-    background: #F7F7F7;
 }
 .Banner-img{
     object-fit: cover;

@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Header from '../src/Components/Header'
-import Home from './Pages/Home';
+import Footer from './Components/Footer';
+import Acceuil from './Pages/Acceuil';
 import Logement from './Pages/Logement';
 import Banner_Apropos from './Pages/Apropos';
 import reportWebVitals from './reportWebVitals';
@@ -15,7 +16,7 @@ ReactDOM.render(
       <Router>
           <Header />
         <Route exact path="/">
-          <Home />
+          <Acceuil />
         </Route>
         <Route path="/Logement">
           <Logement />
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/Apropos">
           <Banner_Apropos />
         </Route>
+          <Footer />
       </Router>
 
   </React.StrictMode>,
