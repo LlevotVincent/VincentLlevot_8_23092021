@@ -3,7 +3,7 @@ import Banner_mountain from '../Assets/Banner_mountain.png'
 import '../Styles/Banner.css'
 import '../Styles/Apropos.css'
 import Dropdown from '../Components/Dropdown'
-import Footer from '../Components/Footer';
+
 
 const aProposText = require('../Datas/AproposText.json')
 
@@ -12,7 +12,7 @@ class Banner_Apropos extends React.Component {
         return (
             <div className='Apropos-body'>
                 <div className='Banner'>
-                    <img src={Banner_mountain} className='Banner-img' alt='image de montagne' />
+                    <img src={Banner_mountain} className='Banner-img' alt='montagne' />
                 </div>
                 <div className='Dropdown-box'>
                 <Dropdown title="Fiabilités"  text={aProposText.Fiabilités}/>

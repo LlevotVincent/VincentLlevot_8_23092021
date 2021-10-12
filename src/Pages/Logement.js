@@ -2,41 +2,30 @@ import React from 'react';
 import Carroussel from '../Components/Carroussel'
 import Dropdown from '../Components/Dropdown';
 
-const logementsArray = require('../Datas/Logements.json')
+const Logements  = require('../Datas/Logements.json')
 
 
 class Logement extends React.Component {
   constructor(props) {
     super(props);
-    
+
 }
 
-// LogementsAnalyse (){
-//   logements.map((logement) => {
 
-//   });
-// }
 
   render() {
-    // let title = this.logements.title;
-    // let location = this.logements.location;
-
 
     return (
       <div className='Logement-body'>
         <div className="Location">
-          <Carroussel />
+          <Carroussel pictures={this.props.pictures}/>
         </div>
         <div>
-          <div>
-            {/* <h2>{title}</h2>
-            <p>{location}</p> */}
-
-
-          </div> 
+              {/* <h2>{logement.title}</h2>
+              <h3>{logement.location}</h3> */}
         </div>  
-        <Dropdown title="Description" />
-        <Dropdown title="Equipement" />
+        <Dropdown title="Description" text={Logements.description} />
+        <Dropdown title="Equipement" text={Logements.equipement}/>
       </div>
     );
   }

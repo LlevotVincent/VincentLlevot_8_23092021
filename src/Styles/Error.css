@@ -1,0 +1,43 @@
+.Error-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Error-title {
+    font-family: Montserrat;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 160px;
+    color: rgba(255, 96, 96, 1);
+}
+
+.Error-text{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+    margin-top: 66px ;
+}
+
+.Error-button {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+    padding: 60px 0 60px 0;
+}
+

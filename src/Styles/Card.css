@@ -8,6 +8,7 @@
 }
 .Card {
     display: flex;
+
     flex-direction: column;
     justify-content: end;
     width: 340px;
@@ -21,6 +22,7 @@
     height: 255px;
     object-fit: cover;
     border-radius: 10px;
+
 }
 .Card>h2 {
     font-family: 'Montserrat';
@@ -30,4 +32,11 @@
     color: white;
     height: 52px;
     margin: 20px;
+}
+a {
+    text-decoration: none;  
+}
+.Card:hover {
+    box-shadow: 5px 5px 5px rgb(93, 93, 93);
+    transform: scale(1.1);
 }

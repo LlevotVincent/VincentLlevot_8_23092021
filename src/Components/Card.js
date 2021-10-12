@@ -1,15 +1,17 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import '../Styles/Card.css';
 
 class Card extends React.Component {
 
     render() {
         return (
-            <div className='Card'>
-                <img className='Card-background' src={this.props.logement.cover} alt='image d appartement' />
-                <h2>{this.props.logement.title}</h2>
-            </div>
+            <Link to={`/Logement/${this.props.logement.id}`}>
+                <div className='Card'>
+                    <img className='Card-background' src={this.props.logement.cover} alt='appartement' />
+                    <h2>{this.props.logement.title}</h2>
+                </div>
+            </Link>
         )
     }
 }

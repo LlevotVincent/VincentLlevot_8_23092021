@@ -1,10 +1,5 @@
 import React from 'react';
 import '../Styles/Dropdown.css'
-import { useState } from 'react'
-import reactDom from 'react-dom';
-
-
-
 
 class Dropdown extends React.Component {
     constructor(props) {
