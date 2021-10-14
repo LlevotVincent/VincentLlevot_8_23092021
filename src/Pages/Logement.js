@@ -1,19 +1,25 @@
 import React from 'react';
-import Carroussel from '../Components/Carroussel'
+import Carroussel from '../Components/Carroussel';
 import Dropdown from '../Components/Dropdown';
-
-const Logements  = require('../Datas/Logements.json')
+import Rating from '../Components/rating';
+import Host from '../Components/Host';
+import '../Styles/Logement.css'
+const logements = require('../Datas/Logements.json')
 
 
 class Logement extends React.Component {
   constructor(props) {
     super(props);
-
+    this.id = this.props.match.params.id
+    this.state = {
+      inputValue: '',
+  }
 }
 
 
 
   render() {
+
 
     return (
       <div className='Logement-body'>
@@ -21,11 +27,15 @@ class Logement extends React.Component {
           <Carroussel pictures={this.props.pictures}/>
         </div>
         <div>
-              {/* <h2>{logement.title}</h2>
-              <h3>{logement.location}</h3> */}
+              <h2 className="Logement-title">{logements.title}</h2>
+              <h3 className="Logement-city">{logements.location}</h3>
         </div>  
-        <Dropdown title="Description" text={Logements.description} />
-        <Dropdown title="Equipement" text={Logements.equipement}/>
+        <div>
+              <Host name={logements.host.name} picture = {logements.host.picture}/>
+              <Rating rating={logements.rating} />
+        </div>  
+        <Dropdown title="Description" text={logements.description} />
+        <Dropdown title="Equipement" text={logements.equipement}/>
       </div>
     );
   }

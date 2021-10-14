@@ -1,3 +1,26 @@
 .Logement-body {
     max-width: 1240px;
 }
+.Logement-title {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+
+}
+
+.Logement-city {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+
+}

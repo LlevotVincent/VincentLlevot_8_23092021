@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import '../Styles/App.css';
 import Header from './Header'
 import Footer from './Footer';
@@ -16,15 +16,13 @@ class App extends React.Component {
         <div className="body">
             <Router>
                 <Header />
-                <Route exact path="/"  component={Acceuil}>
-                </Route>
-                <Route path="/Logement"component={Logement}>
-                </Route>
-                <Route path="/Apropos" component={Banner_Apropos}>
-                </Route>
-                <Route path="/Error" component={Error} />
+                <Switch>
+                  <Route exact path="/"  component={Acceuil} />
+                  <Route path="/Logement"component={Logement} />
+                  <Route path="/Apropos" component={Banner_Apropos} />
+                  <Route component={Error}/>
+                </Switch>
                 <Footer />
-
             </Router>
         </div>
       )

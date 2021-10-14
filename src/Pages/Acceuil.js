@@ -8,6 +8,7 @@ const logements = require('../Datas/Logements.json')
 
 class Acceuil extends React.Component {
 
+
   render() {
     return (
       <div className="Acceuil">
