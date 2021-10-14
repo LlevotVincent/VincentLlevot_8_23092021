@@ -1,5 +1,4 @@
 .Dropdown {
-
     height: auto;
     width: 100%;
     display: flex;
@@ -18,10 +17,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .Dropdown_title>h2 {
     font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
 }
@@ -29,20 +28,27 @@
     font-size: 24px;
 }
 
-.Dropdown_Text {
+.Dropdown_Box {
     position: relative;
-    width: 1023px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     color: #FF6060;
     background: #F7F7F7;
     border-radius: 5px;
+    margin: 0;
+    padding: 29px 0 0 0;
 
 }
-.Dropdown_Text>p {
-    padding: 29px;
+.Dropdown_Box>p {
+    padding-left: 29px;
     margin: 0;
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 24px;
+}
+.Dropdown_Box>li {
+    padding-left: 29px;
+    font-family: Montserrat;
+    font-size: 24px;
+    color: #FF6060;
 }

@@ -14,30 +14,35 @@ class Logement extends React.Component {
     this.state = {
       inputValue: '',
   }
+  for (var logement of logements) {
+    if (logement.id === this.id) {
+      this.logement = logement
+      console.log(this)
+    }
+  }
 }
-// AnalyzeLogement(){
-//   logements.map((logement) => 
-// return logement
-// }
 
   render() {
-
 
     return (
       <div className='Logement-body'>
         <div className="Location">
           <Carroussel pictures={this.props.pictures}/>
         </div>
-        <div>
-              <h2 className="Logement-title">{logements.title}</h2>
-              <h3 className="Logement-city">{logements.location}</h3>
+        <div className='Logement-identity'>
+          <div className='Logement-cardname'>
+              <h2 className="Logement-title">{this.logement.title}</h2>
+              <h3 className="Logement-city">{this.logement.location}</h3>
+          </div>  
+          <div className='Logement-host'>
+              <Host name={this.logement.host.name} picture = {this.logement.host.picture}/>
+              <Rating rating={this.logement.rating} />
+          </div>  
+        </div>
+        <div className='Logement-Dropdown'>
+        <Dropdown title="Description" text={this.logement.description} />
+        <Dropdown title="Equipement" text={this.logement.equipments}/>
         </div>  
-        <div>
-              <Host name={logements.host.name} picture = {logements.host.picture}/>
-              <Rating rating={logements.rating} />
-        </div>  
-        <Dropdown title="Description" text={logements.description} />
-        <Dropdown title="Equipement" text={logements.equipement}/>
       </div>
     );
   }

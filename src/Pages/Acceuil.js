@@ -8,14 +8,14 @@ const logements = require('../Datas/Logements.json')
 
 class Acceuil extends React.Component {
 
-
   render() {
 
-const logementList = logements.map((logement) =>
-    <li key={logement.id} className='card'>
-      <Card logement={logement} />
-    </li>
-);
+    const logementList = logements.map((logement) =>
+      <li key={logement.id} className='card'>
+        <Card logement={logement} />
+      </li>
+    );
+    
     return (
       <div className="Acceuil">
         <Banner />

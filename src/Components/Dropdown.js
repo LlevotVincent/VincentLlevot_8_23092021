@@ -4,21 +4,30 @@ import '../Styles/Dropdown.css'
 class Dropdown extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {isShow: false};
+        this.state = { isShow: false };
     }
-    showBox (){
-        this.setState({isShow: !this.state.isShow});
+    showBox() {
+        this.setState({ isShow: !this.state.isShow });
     }
-    
+
     render() {
         const isShow = this.state.isShow;
-        let dropdownText;
+        let dropdownText = '';
         let chevron;
+
         if (isShow === true) {
-            dropdownText = <div className='Dropdown_Text'><p>{this.props.text}</p></div>
+            if (Array.isArray(this.props.text)) {
+                dropdownText = 
+                    <ul className='Dropdown_Box'>
+                        {this.props.text.map((item) =>
+                        <li>{item}</li>
+                        )};
+                    </ul>  
+            } else {
+                dropdownText = <div className='Dropdown_Box'><p>{this.props.text}</p></div>
+            }
             chevron = 'fas fa-chevron-up'
         } else {
-            dropdownText = ''
             chevron = 'fas fa-chevron-down'
         }
 

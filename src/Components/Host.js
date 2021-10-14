@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Styles/Host.css';
 
 
 class Host extends React.Component {

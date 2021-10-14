@@ -1,0 +1,22 @@
+.Host{
+    display: flex;
+    margin-top: 30px;
+}
+
+.Host-name {
+    width: 93px;
+    color: rgba(255, 96, 96, 1);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: normal;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.Host-img {
+   border-radius: 100%;
+   width: 60px;
+}

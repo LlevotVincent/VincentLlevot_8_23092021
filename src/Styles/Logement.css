@@ -10,7 +10,8 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(255, 96, 96, 1);
-
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 .Logement-city {
@@ -22,5 +23,20 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(255, 96, 96, 1);
+    margin-top: 0;
+}
 
+.Logement-Dropdown {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+}
+
+.Logement-identity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logement-host {
+    text-align: right;
 }
