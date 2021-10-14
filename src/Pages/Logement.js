@@ -15,8 +15,10 @@ class Logement extends React.Component {
       inputValue: '',
   }
 }
-
-
+// AnalyzeLogement(){
+//   logements.map((logement) => 
+// return logement
+// }
 
   render() {
 

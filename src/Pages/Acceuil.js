@@ -10,15 +10,17 @@ class Acceuil extends React.Component {
 
 
   render() {
+
+const logementList = logements.map((logement) =>
+    <li key={logement.id} className='card'>
+      <Card logement={logement} />
+    </li>
+);
     return (
       <div className="Acceuil">
         <Banner />
         <ul className='cardgrid'>
-          {logements.map((logement) =>
-            <li key={logement.id} className='card'>
-              <Card logement={logement} />
-            </li>
-          )}
+          {logementList}
         </ul>
       </div>
     )
