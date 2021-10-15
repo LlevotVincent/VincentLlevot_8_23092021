@@ -20,7 +20,7 @@ class Dropdown extends React.Component {
                 dropdownText = 
                     <ul className='Dropdown_Box'>
                         {this.props.text.map((item) =>
-                        <li>{item}</li>
+                        <li key={item}>{item}</li>
                         )};
                     </ul>  
             } else {

@@ -9,7 +9,7 @@ class Host extends React.Component {
         return (
             <div className='Host'>
                 <div className='Host-name'>{this.props.name}</div>
-                <img className='Host-img' src={this.props.picture}></img>
+                <img className='Host-img' src={this.props.picture} alt='identité'></img>
             </div>
         )
     }

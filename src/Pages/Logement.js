@@ -17,7 +17,6 @@ class Logement extends React.Component {
   for (var logement of logements) {
     if (logement.id === this.id) {
       this.logement = logement
-      console.log(this)
     }
   }
 }
@@ -27,7 +26,7 @@ class Logement extends React.Component {
     return (
       <div className='Logement-body'>
         <div className="Location">
-          <Carroussel pictures={this.props.pictures}/>
+          <Carroussel pictures={this.logement.pictures}/>
         </div>
         <div className='Logement-identity'>
           <div className='Logement-cardname'>
