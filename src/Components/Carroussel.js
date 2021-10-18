@@ -16,24 +16,46 @@ class Carroussel extends React.Component {
 
         let CurrentImg = this.state.InitialImg
         let ImgArraylength = this.ImgArraylength
-        let InitialImg = CurrentImg
 
-            if (CurrentImg < ImgArraylength-1){
-        console.log(InitialImg)
-                CurrentImg ++
-                console.log(CurrentImg)
-                console.log(ImgArraylength)
+            if (CurrentImg === ImgArraylength -1){
+                CurrentImg = 0;
             }
-            InitialImg = CurrentImg
+
+            if (CurrentImg < ImgArraylength -1){
+                CurrentImg ++
+            }
+
+            this.setState ({
+                InitialImg: CurrentImg
+            });
     }
 
+    PreiousIndex() {
+
+        let CurrentImg = this.state.InitialImg
+        let ImgArraylength = this.ImgArraylength
+
+            if (CurrentImg === 0){
+                CurrentImg = ImgArraylength -1 ;
+            }
+
+            if (CurrentImg <= ImgArraylength){
+                console.log(this)
+                CurrentImg --
+            }
+
+            this.setState ({
+                InitialImg: CurrentImg
+            });
+    }
 
     render() {
+
         return (
             <div>
                 <div className='Banner_logement'>
                     <img src={this.props.pictures[this.state.InitialImg]} className='Img_Logement' alt='logement' />
-                    <i className='fas fa-chevron-left' ></i>
+                    <i className='fas fa-chevron-left' onClick={this.PreiousIndex.bind(this)}></i>
                     <i className='fas fa-chevron-right' onClick={this.nextIndex.bind(this)} ></i>
                 </div>
             </div>
