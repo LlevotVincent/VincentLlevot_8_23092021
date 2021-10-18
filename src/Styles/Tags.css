@@ -1,0 +1,15 @@
+.TagList {
+    display: flex;
+    gap: 10px;
+}
+
+.Tag {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: white;
+    font-style: normal;
+    padding : 3px 40px 5px 40px;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: rgba(255, 96, 96, 1);
+}

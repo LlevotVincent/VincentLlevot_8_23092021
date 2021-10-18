@@ -11,7 +11,7 @@ class Rating extends React.Component {
         return (
             <div className='Ratting'>
             {range.map((rangeElem) =>
-                this.props.rating >= rangeElem ? <img src={StarCheck} alt='etoile de rouge'></img> : <img src={StarUncheck} alt='etoile blanche'></img>
+                this.props.rating >= rangeElem ? <img key={rangeElem} src={StarCheck} alt='etoile de rouge'></img> : <img key={rangeElem} src={StarUncheck} alt='etoile blanche'></img>
             )}
             </div>
         )

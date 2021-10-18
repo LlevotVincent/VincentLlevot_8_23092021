@@ -4,6 +4,7 @@ import Dropdown from '../Components/Dropdown';
 import Rating from '../Components/rating';
 import Host from '../Components/Host';
 import '../Styles/Logement.css'
+import Tags from '../Components/Tags'
 const logements = require('../Datas/Logements.json')
 
 
@@ -37,6 +38,9 @@ class Logement extends React.Component {
               <Host name={this.logement.host.name} picture = {this.logement.host.picture}/>
               <Rating rating={this.logement.rating} />
           </div>  
+        </div>
+        <div className='Tag-container'>
+          <Tags tagList = {this.logement.tags} />
         </div>
         <div className='Logement-Dropdown'>
         <Dropdown title="Description" text={this.logement.description} />

@@ -40,3 +40,7 @@
 .Logement-host {
     text-align: right;
 }
+
+.Tag-container {
+    display: flex;
+}
