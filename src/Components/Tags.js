@@ -8,7 +8,7 @@ class Tags extends React.Component {
         return (
             <div className='TagList'>
             {this.props.tagList.map((Tag) =>
-                <div key='Tag' className='Tag'>{Tag}</div>
+                <div key={Tag} className='Tag'>{Tag}</div>
             )}
             </div>
         )

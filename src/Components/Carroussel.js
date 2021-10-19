@@ -17,6 +17,10 @@ class Carroussel extends React.Component {
         let CurrentImg = this.state.InitialImg
         let ImgArraylength = this.ImgArraylength
 
+        if (ImgArraylength===1){
+            return
+        }else {
+
             if (CurrentImg === ImgArraylength -1){
                 CurrentImg = 0;
             }
@@ -24,6 +28,7 @@ class Carroussel extends React.Component {
             if (CurrentImg < ImgArraylength -1){
                 CurrentImg ++
             }
+        }
 
             this.setState ({
                 InitialImg: CurrentImg
@@ -35,15 +40,18 @@ class Carroussel extends React.Component {
         let CurrentImg = this.state.InitialImg
         let ImgArraylength = this.ImgArraylength
 
+        if (ImgArraylength===1){
+            return
+        }else {
             if (CurrentImg === 0){
                 CurrentImg = ImgArraylength -1 ;
             }
 
             if (CurrentImg <= ImgArraylength){
-                console.log(this)
+                console.log(ImgArraylength)
                 CurrentImg --
             }
-
+        }
             this.setState ({
                 InitialImg: CurrentImg
             });
@@ -52,7 +60,7 @@ class Carroussel extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className='Banner_carroussel'>
                 <div className='Banner_logement'>
                     <img src={this.props.pictures[this.state.InitialImg]} className='Img_Logement' alt='logement' />
                     <i className='fas fa-chevron-left' onClick={this.PreiousIndex.bind(this)}></i>

@@ -44,3 +44,36 @@
 .Tag-container {
     display: flex;
 }
+
+@media screen and (max-width: 768px) {
+
+    .Logement-body {
+        margin: 0;
+    }
+
+    .Logement-identity {
+        margin: 5%;
+        width: 90%;
+        flex-direction: column;
+    }
+    .Logement-title {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .Logement-host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .Logement-city {
+        font-size: 14px;
+    }
+      .Logement-Dropdown {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        column-gap: 0;
+    }
+  }

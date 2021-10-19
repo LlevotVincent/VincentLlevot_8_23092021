@@ -27,3 +27,27 @@
     font-size: 80px;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+
+.Banner_carroussel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }   
+.Banner_logement{
+    width: 90%;
+    height: 255px;
+}
+
+.fa-chevron-left  {
+    top: 90px;
+    font-size: 60px;
+    left: 15px;
+}
+.fa-chevron-right  {
+    top: 90px;
+    font-size: 60px;
+    right: 15px;
+}
+}

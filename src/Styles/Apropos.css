@@ -3,6 +3,26 @@
 }
 
 .Dropdown-box {
-
     margin : 0px 109px 0 108px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Apropos-body {
+        max-width: 100%;
+        padding: 5%;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .Dropdown-box {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

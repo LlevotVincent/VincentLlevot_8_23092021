@@ -10,10 +10,8 @@
     font-size: 288px;
     font-style: normal;
     font-weight: 700;
-    line-height: 411px;
-    letter-spacing: 0em;
     text-align: center;
-    margin-top: 160px;
+    margin: 160px 0 66px 0;
     color: rgba(255, 96, 96, 1);
 }
 
@@ -22,11 +20,9 @@
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0em;
     text-align: left;
     color: rgba(255, 96, 96, 1);
-    margin-top: 66px ;
+    margin-top: 0px ;
 }
 
 .Error-button {
@@ -41,3 +37,16 @@
     padding: 60px 0 60px 0;
 }
 
+@media screen and (max-width: 768px) {
+
+    .Error-title {
+        font-size: 93px;
+        margin: 160px 0 0 0;
+    }
+    .Error-text{
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+    }
+
+}

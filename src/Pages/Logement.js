@@ -33,15 +33,17 @@ class Logement extends React.Component {
           <div className='Logement-cardname'>
               <h2 className="Logement-title">{this.logement.title}</h2>
               <h3 className="Logement-city">{this.logement.location}</h3>
+              <div className='Tag-container'>
+                <Tags tagList = {this.logement.tags} />
+              </div>
           </div>  
+
           <div className='Logement-host'>
               <Host name={this.logement.host.name} picture = {this.logement.host.picture}/>
               <Rating rating={this.logement.rating} />
           </div>  
         </div>
-        <div className='Tag-container'>
-          <Tags tagList = {this.logement.tags} />
-        </div>
+
         <div className='Logement-Dropdown'>
         <Dropdown title="Description" text={this.logement.description} />
         <Dropdown title="Equipement" text={this.logement.equipments}/>

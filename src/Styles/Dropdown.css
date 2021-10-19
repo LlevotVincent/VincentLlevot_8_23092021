@@ -27,7 +27,6 @@
 .dropdown>i {
     font-size: 24px;
 }
-
 .Dropdown_Box {
     position: relative;
     width: 100%;
@@ -37,13 +36,11 @@
     border-radius: 5px;
     margin: 0;
     padding: 29px 0 0 0;
-
 }
 .Dropdown_Box>p {
     padding-left: 29px;
     margin: 0;
     font-family: Montserrat;
-
     font-size: 24px;
 }
 .Dropdown_Box>li {
@@ -51,4 +48,25 @@
     font-family: Montserrat;
     font-size: 24px;
     color: #FF6060;
+}
+
+@media screen and (max-width: 768px) {
+    .Dropdown {
+        margin-top: 20px;
+    }
+    .Dropdown_title {
+        height: 30px;
+    }
+    .Dropdown_title>h2 {
+        font-size: 13px;
+    }
+    .Dropdown_Box {
+        padding: 10px 0 20px 0;
+    }
+    .Dropdown_Box>p {
+        font-size: 12px;
+    }
+    .Dropdown_Box>li {
+        font-size: 12px;
+    }
 }

@@ -17,7 +17,7 @@ class App extends React.Component {
             <Router>
                 <Header />
                 <Switch>
-                  <Route exact path="/"  component={Acceuil} />
+                  <Route exact path="/" component={Acceuil} />
                   <Route path="/Logement/:id"component={Logement} />
                   <Route path="/Apropos" component={Banner_Apropos} />
                   <Route component={Error}/>

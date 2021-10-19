@@ -6,8 +6,8 @@ class Banner extends React.Component {
     render() {
         return (
             <div className='Banner'>
-                <img src={Background} className='Banner-img' alt='nature' />
-                <p>Chez vous, partout et ailleurs</p>
+                <img src={this.props.img} className='Banner-img' alt='nature' />
+                <p>{this.props.text}</p>
             </div>
         )
     }

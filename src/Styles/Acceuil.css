@@ -18,3 +18,18 @@
 li {
   list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+
+
+  .Acceuil {
+    padding: 5%;
+    padding-top: 0;
+  }
+  .cardgrid {
+    margin: 0;
+    background: none;
+
+  }
+
+}
