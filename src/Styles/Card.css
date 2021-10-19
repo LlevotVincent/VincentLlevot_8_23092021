@@ -8,7 +8,6 @@
 }
 .Card {
     display: flex;
-
     flex-direction: column;
     justify-content: flex end;
     width: 340px;
@@ -39,4 +38,27 @@ a {
 .Card:hover {
     box-shadow: 5px 5px 5px rgb(93, 93, 93);
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+
+    .Cardgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 340px 340px;
+        grid-gap: 60px;
+        margin: 100px;
+        padding: 50px;
+    }
+
+    .Card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex end;
+        width: 100%;
+        height: 340px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        background: linear-gradient(180deg, #FF6060 0%, rgba(255, 96, 96, 1) 100%);
+    }
 }

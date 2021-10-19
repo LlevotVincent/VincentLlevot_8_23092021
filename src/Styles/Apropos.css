@@ -1,5 +1,5 @@
 .Apropos-body {
-    max-width: 1240px;
+    max-width: 100%;
 }
 
 .Dropdown-box {
@@ -11,7 +11,7 @@
 
     .Apropos-body {
         max-width: 100%;
-        padding: 5%;
+
         padding-top: 0;
         display: flex;
         flex-direction: column;

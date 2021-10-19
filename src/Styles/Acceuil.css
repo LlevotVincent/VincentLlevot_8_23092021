@@ -1,7 +1,6 @@
 
-
 .Acceuil {
-  max-width: 1440px;
+  max-width: 100%;
 }
 
 .cardgrid {
@@ -19,17 +18,18 @@ li {
   list-style-type: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
 
   .Acceuil {
-    padding: 5%;
+    max-width: 100%;
     padding-top: 0;
-  }
+
+}
   .cardgrid {
     margin: 0;
     background: none;
-
+    padding: 50px 0 0 0;
   }
 
 }

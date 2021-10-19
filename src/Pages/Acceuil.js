@@ -20,10 +20,6 @@ class Acceuil extends React.Component {
     
     return (
       <div className="Acceuil">
-          {/* <div className='Banner'>
-            <img src={Background} className='Banner-img' alt='nature' />
-            <p>Chez vous, partout et ailleurs</p>
-          </div> */}
           <Banner img={Background} text={TextBanner} />
         <ul className='cardgrid'>
           {logementList}
