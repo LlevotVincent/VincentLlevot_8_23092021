@@ -1,5 +1,4 @@
 import React from 'react';
-import Background from '../Assets/Banner_background.png'
 import '../Styles/Banner.css'
 
 class Banner extends React.Component {
