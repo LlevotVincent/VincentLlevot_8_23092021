@@ -1,6 +1,7 @@
 import React from 'react';
 import StarCheck from '../Assets/StarCheck.svg'
 import StarUncheck from '../Assets/StarUncheck.svg'
+import '../Styles/Rating.css'
 
 class Rating extends React.Component {
 

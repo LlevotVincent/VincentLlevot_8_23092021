@@ -13,3 +13,22 @@
     justify-content: space-between;
     background-color: rgba(255, 96, 96, 1);
 }
+
+@media screen and (max-width: 768px) {
+
+    .TagList {
+        display: flex;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .Tag {
+        display: flex;
+        font-weight: lighter;
+        font-size: 12px;
+        padding : 3px 10px 5px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
