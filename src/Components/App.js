@@ -1,12 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import '../Styles/App.css';
 import Header from './Header'
 import Footer from './Footer';
-import Acceuil from '../Pages/Acceuil';
-import Logement from '../Pages/Logement';
-import Banner_Apropos from '../Pages/Apropos';
-import Error from '../Pages/Error';
+import Router from '../Components/Router'
 
 
 class App extends React.Component {
@@ -14,16 +11,11 @@ class App extends React.Component {
     render (){
       return (
         <div className="body">
-            <Router>
+            <BrowserRouter>
                 <Header />
-                <Switch>
-                  <Route exact path="/" component={Acceuil} />
-                  <Route path="/Logement/:id"component={Logement} />
-                  <Route path="/Apropos" component={Banner_Apropos} />
-                  <Route component={Error}/>
-                </Switch>
+                <Router />
                 <Footer />
-            </Router>
+            </BrowserRouter>
         </div>
       )
     } 

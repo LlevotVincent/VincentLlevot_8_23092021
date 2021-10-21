@@ -1,10 +1,10 @@
 
 .Banner{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    max-width: 100%;
     position: relative;
     height: auto;
+    justify-content: center;
 }
 .Banner-img{
     object-fit: cover;
@@ -13,13 +13,12 @@
 }
 .Banner>p{
     position: absolute;
-    left: 25.9%;
-    top: 20%;
+    align-items: center;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 142.6%;
     color: white;
+    top: 10%;
 }
 
 
@@ -27,6 +26,7 @@
 
     .Banner{
         height: 110px;
+        
     }
     .Banner-img{
         width: 100%;
