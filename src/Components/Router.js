@@ -10,24 +10,21 @@ class Router extends React.Component {
 
         const Routes = [
             {
-              name: 'Acceuil',
               path: "/",
               component: Acceuil,
               exact: true
             },
             {
-              name: 'Logement',
               path: "/Logement/:id",
               component: Logement,
             },
             {
-              name: 'A propos',
               path: "/Apropos",
               component: Banner_Apropos,
+              exact : true
             },
             {
-                name: 'A propos',
-                path: "",
+                path: "*",
                 component: Error,
               }
           ];

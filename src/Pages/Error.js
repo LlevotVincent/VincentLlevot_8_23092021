@@ -10,8 +10,8 @@ class Error extends React.Component {
             <div className='Error-body'>
                 <h2 className='Error-title'>404</h2>
                 <p className="Error-text">Oups! La page que vous demandez n'existe pas.</p>
-                <NavLink Redirect to="/">
-                    <div className='Error-button'>Retourner sur la page d'acceuil</div>
+                <NavLink exact Redirect to="/">
+                    <div  className='Error-button'>Retourner sur la page d'acceuil</div>
                 </NavLink>
             </div>
         )
