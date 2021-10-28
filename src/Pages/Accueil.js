@@ -19,7 +19,7 @@ class Acceuil extends React.Component {
     );
     
     return (
-      <div className="Acceuil">
+      <div className="Accueil">
           <Banner img={Background} text={TextBanner} />
         <ul className='cardgrid'>
           {logementList}
