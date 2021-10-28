@@ -20,16 +20,13 @@ class Carroussel extends React.Component {
         if (ImgArraylength===1){
             return
         }else {
-
-            if (CurrentImg === ImgArraylength -1){
-                CurrentImg = 0;
-            }
-
-            if (CurrentImg < ImgArraylength -1){
+            if (CurrentImg < ImgArraylength){
                 CurrentImg ++
             }
+            if (CurrentImg === ImgArraylength){
+                CurrentImg = 0;
+            }
         }
-
             this.setState ({
                 InitialImg: CurrentImg
             });
@@ -44,11 +41,9 @@ class Carroussel extends React.Component {
             return
         }else {
             if (CurrentImg === 0){
-                CurrentImg = ImgArraylength -1 ;
+                CurrentImg = ImgArraylength ;
             }
-
             if (CurrentImg <= ImgArraylength){
-                console.log(ImgArraylength)
                 CurrentImg --
             }
         }
@@ -58,13 +53,16 @@ class Carroussel extends React.Component {
     }
 
     render() {
-
+        let hidden = 'hidden'
         return (
             <div className='Banner_carroussel'>
                 <div className='Banner_logement'>
                     <img src={this.props.pictures[this.state.InitialImg]} className='Img_Logement' alt='logement' />
-                    <i className='fas fa-chevron-left' onClick={this.PreiousIndex.bind(this)}></i>
-                    <i className='fas fa-chevron-right' onClick={this.nextIndex.bind(this)} ></i>
+                    <i className='fas fa-chevron-left' style={this.ImgArraylength===1 ? { display: 'none' } : {} } onClick={this.PreiousIndex.bind(this)} ></i>
+                    <i className='fas fa-chevron-right' style={this.ImgArraylength===1 ? { display: 'none' } : {} } onClick={this.nextIndex.bind(this)} ></i>
+                    <div className='img-number'>
+                    {this.state.InitialImg+1}/{this.ImgArraylength}
+                    </div>
                 </div>
             </div>
         )

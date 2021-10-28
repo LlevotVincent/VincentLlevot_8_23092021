@@ -28,6 +28,19 @@
     color: white;
 }
 
+.img-number {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+.hidden {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 
 .Banner_carroussel {
