@@ -8,7 +8,7 @@ import '../Styles/Accueil.css';
 const logements = require('../Datas/Logements.json')
 let TextBanner = 'Chez vous, partout et ailleurs'
 
-class Acceuil extends React.Component {
+class Accueil extends React.Component {
 
   render() {
 
@@ -29,4 +29,4 @@ class Acceuil extends React.Component {
   }
 }
 
-export default Acceuil;
+export default Accueil;

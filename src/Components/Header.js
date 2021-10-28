@@ -9,7 +9,7 @@ class Header extends React.Component {
             <div className='header'>
                 <img src={logo} className='logo-Kasa' alt='logo kasa' />
                 <nav className='nav-bar'>
-                    <Link exact to="/">Acceuil</Link>
+                    <Link to="/">Acceuil</Link>
                     <Link to="/Apropos">A propos</Link>
                 </nav>
             </div>

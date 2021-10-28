@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Switch } from 'react-router-dom'
-import Acceuil from '../Pages/Acceuil';
+import Accueil from '../Pages/Accueil';
 import Logement from '../Pages/Logement';
 import Banner_Apropos from '../Pages/Apropos';
 import Error from '../Pages/Error';
@@ -11,7 +11,7 @@ class Router extends React.Component {
         const Routes = [
             {
               path: "/",
-              component: Acceuil,
+              component: Accueil,
               exact: true
             },
             {
