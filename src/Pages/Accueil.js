@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../Components/Banner'
 import Background from '../Assets/Banner_background.png'
 import Card from '../Components/Card';
-import '../Styles/Acceuil.css';
+import '../Styles/Accueil.css';
 
 // import Logement from './Logement';
 const logements = require('../Datas/Logements.json')
