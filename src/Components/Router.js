@@ -15,7 +15,7 @@ class Router extends React.Component {
               exact: true
             },
             {
-              path: "/Logement/:id",
+              path: "/logement/:id",
               component: Logement,
             },
             {
