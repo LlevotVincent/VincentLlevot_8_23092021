@@ -24,7 +24,7 @@ class Router extends React.Component {
               exact : true
             },
             {
-                path: "*",
+                path: "/Error",
                 component: Error,
               }
           ];

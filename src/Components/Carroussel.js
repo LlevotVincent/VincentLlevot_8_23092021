@@ -53,7 +53,7 @@ class Carroussel extends React.Component {
     }
 
     render() {
-        let hidden = 'hidden'
+
         return (
             <div className='Banner_carroussel'>
                 <div className='Banner_logement'>
