@@ -8,7 +8,7 @@ import Dropdown from '../Components/Dropdown'
 
 const aProposText = require('../Datas/AproposText.json')
 
-class Banner_Apropos extends React.Component {
+class Apropos extends React.Component {
     render() {
         return (
             <div className='Apropos-body'>
@@ -23,4 +23,4 @@ class Banner_Apropos extends React.Component {
         )
     }
 }
-export default Banner_Apropos
+export default Apropos
